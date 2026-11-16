@@ -1,3 +1,48 @@
+/* ===== Colors, font, spacing ===== */
+:root {
+    --color-text: #1b2a41;
+    --color-accent: #2f5d8a;
+    --color-bg: #ffffff;
+    --font-main: system-ui, sans-serif;
+    --space: 1rem;
+}
+
+/* ===== Base ===== */
+body {
+    margin: 0;
+    font-family: var(--font-main);
+    color: var(--color-text);
+    background: var(--color-bg);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: var(--color-accent);
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 3px;
+}
+
+/* ===== Spacing ===== */
+header,
+section,
+footer {
+    padding: var(--space);
+}
+
+section {
+    margin-bottom: calc(var(--space) * 2);
+}
+
+/* ===== Header + mobile menu (phone first) ===== */
 header {
     display: flex;
     flex-wrap: wrap;
@@ -39,6 +84,13 @@ header {
     gap: 0.5rem;
 }
 
+/* ===== About ===== */
+#about img {
+    max-width: 20rem;
+    border-radius: 0.5rem;
+}
+
+/* ===== Project cards ===== */
 .project-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -57,6 +109,7 @@ header {
     object-fit: cover;
 }
 
+/* ===== Wider screens ===== */
 @media (min-width: 768px) {
     .menu-button {
         display: none;
