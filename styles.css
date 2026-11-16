@@ -1,1 +1,57 @@
-/* Write your own styles here. */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-name {
+    font-weight: 700;
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+.menu-button {
+    font: inherit;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--color-accent);
+    border-radius: 0.25rem;
+    background: transparent;
+    color: var(--color-text);
+    cursor: pointer;
+}
+
+#site-nav {
+    display: none;
+    width: 100%;
+}
+
+#site-nav.is-open {
+    display: block;
+}
+
+#site-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: var(--space) 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .menu-button {
+        display: none;
+    }
+
+    #site-nav {
+        display: block;
+        width: auto;
+    }
+
+    #site-nav ul {
+        flex-direction: row;
+        gap: 1.5rem;
+        margin: 0;
+    }
+}
