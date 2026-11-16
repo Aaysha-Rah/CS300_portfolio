@@ -39,6 +39,24 @@ header {
     gap: 0.5rem;
 }
 
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.project-card {
+    border: 1px solid #dddddd;
+    border-radius: 0.5rem;
+    padding: var(--space);
+}
+
+.project-card img {
+    border-radius: 0.25rem;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
 @media (min-width: 768px) {
     .menu-button {
         display: none;
@@ -53,5 +71,9 @@ header {
         flex-direction: row;
         gap: 1.5rem;
         margin: 0;
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
