@@ -1,18 +1,37 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Your Name: Portfolio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <header>
-    <!-- Header and navigation: your name or logo, and links to your main sections. -->
+    <a href="#introduction" class="site-name">[Your name]</a>
+
+    <button type="button" class="menu-button" aria-expanded="false" aria-controls="site-nav">
+      Menu
+    </button>
+
+    <nav id="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
   <main>
     <section id="introduction">
-      <!-- Introduction: your name, a one-line headline, a short welcome, and a link to your work. -->
+      <h1>[Your full name]</h1>
+      <p class="headline">[One line: what you study + what internship you want]</p>
+      <p>[One or two welcoming sentences to a reviewer]</p>
+      <a href="#projects" class="button">See my projects</a>
     </section>
     <section id="about">
       <!-- About: your interests, studies, and goals. No home address, phone number, or student ID. -->
@@ -35,4 +54,5 @@
   </footer>
   <script src="app.js"></script>
 </body>
+
 </html>
