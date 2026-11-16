@@ -84,6 +84,16 @@ header {
     gap: 0.5rem;
 }
 
+/* ===== Introduction button ===== */
+.button {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background: var(--color-accent);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 0.25rem;
+}
+
 /* ===== About ===== */
 #about img {
     max-width: 20rem;
@@ -107,6 +117,27 @@ header {
     border-radius: 0.25rem;
     aspect-ratio: 4 / 3;
     object-fit: cover;
+}
+
+/* ===== Case studies ===== */
+.case-study {
+    margin-top: calc(var(--space) * 2);
+    padding: var(--space);
+    border-left: 4px solid var(--color-accent);
+    background: #f5f7fa;
+}
+
+/* ===== Footer ===== */
+.footer-links,
+.contact-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+footer {
+    border-top: 1px solid #dddddd;
 }
 
 /* ===== Wider screens ===== */
